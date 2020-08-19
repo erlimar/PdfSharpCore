@@ -157,4 +157,7 @@
     <value>Image {0} could not be read.
  Inner exception: {1}</value>
   </data>
+  <data name="DisplayHtmlFormRenderError" xml:space="preserve">
+    <value>Error on render HTML.</value>
+  </data>
 </root>

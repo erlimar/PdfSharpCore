@@ -2,6 +2,7 @@
 ; 
 ;  Authors:
 ;    Klaus Potzesny (mailto:Klaus.Potzesny@pdfsharp.com)
+;    Erlimar Silva Campos (mailto:erlimar@gmail.com)
 ; 
 ;  Copyright (c) 2001-2014 empira Software GmbH, Cologne Area (Germany)
 ; 
@@ -44,3 +45,4 @@ DisplayEmptyImageSize = Image has empty size.
 DisplayImageFileNotFound = Image not found.
 DisplayInvalidImageType = Image has no valid type.
 DisplayImageNotRead = Image could not be read.
+DisplayHtmlFormRenderError = Error on render HTML.

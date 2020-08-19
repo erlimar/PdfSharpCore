@@ -2,8 +2,10 @@
 //
 // Authors:
 //   Klaus Potzesny
+//   Erlimar Silva Campos
 //
 // Copyright (c) 2001-2017 empira Software GmbH, Cologne Area (Germany)
+// Copyright (c) 2020 Erlimar Silva Campos (Brazil)
 //
 // http://www.pdfsharp.com
 // http://www.migradoc.com
@@ -161,6 +163,8 @@ namespace MigraDoc.Rendering
                 renderer = new ChartRenderer(gfx, (Chart)documentObject, fieldInfos);
             else if (documentObject is Image)
                 renderer = new ImageRenderer(gfx, (Image)documentObject, fieldInfos);
+            else if (documentObject is HtmlForm)
+                renderer = new HtmlFormRenderer(gfx, (HtmlForm)documentObject, fieldInfos);
 
             if (renderer != null)
                 renderer._documentRenderer = documentRenderer;
@@ -190,10 +194,10 @@ namespace MigraDoc.Rendering
                 renderer = new TextFrameRenderer(gfx, renderInfo, fieldInfos);
             else if (renderInfo.DocumentObject is Chart)
                 renderer = new ChartRenderer(gfx, renderInfo, fieldInfos);
-            //else if (renderInfo.DocumentObject is Chart)
-            //  renderer = new ChartRenderer(gfx, renderInfo, fieldInfos);
             else if (renderInfo.DocumentObject is Image)
                 renderer = new ImageRenderer(gfx, renderInfo, fieldInfos);
+            else if (renderInfo.DocumentObject is HtmlForm)
+                renderer = new HtmlFormRenderer(gfx, renderInfo, fieldInfos);
 
             if (renderer != null)
                 renderer._documentRenderer = documentRenderer;

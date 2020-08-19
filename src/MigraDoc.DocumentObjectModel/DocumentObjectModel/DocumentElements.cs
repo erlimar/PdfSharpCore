@@ -4,8 +4,10 @@
 //   Stefan Lange
 //   Klaus Potzesny
 //   David Stephensen
+//   Erlimar Silva Campos
 //
 // Copyright (c) 2001-2017 empira Software GmbH, Cologne Area (Germany)
+// Copyright (c) 2020 Erlimar Silva Campos (Brazil)
 //
 // http://www.pdfsharp.com
 // http://www.migradoc.com
@@ -173,6 +175,17 @@ namespace MigraDoc.DocumentObjectModel
             image.Name = name;
             Add(image);
             return image;
+        }
+
+        /// <summary>
+        /// Adds a new html form to the collection.
+        /// </summary>
+        public HtmlForm AddHtmlForm(string content)
+        {
+            HtmlForm form = new HtmlForm();
+            form.Content = content;
+            Add(form);
+            return form;
         }
 
         /// <summary>

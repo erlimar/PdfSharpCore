@@ -72,6 +72,11 @@ namespace MigraDoc.Rendering.Resources
             get { return FormatMessage(IDs.DisplayImageNotRead); }
         }
 
+        internal static string DisplayHtmlFormRenderError
+        {
+            get { return FormatMessage(IDs.DisplayHtmlFormRenderError); }
+        }
+
         internal static string PropertyNotSetBefore(string propertyName, string functionName)
         {
             return FormatMessage(IDs.PropertyNotSetBefore, propertyName, functionName);
@@ -123,7 +128,8 @@ namespace MigraDoc.Rendering.Resources
             DisplayEmptyImageSize,
             DisplayImageFileNotFound,
             DisplayInvalidImageType,
-            DisplayImageNotRead
+            DisplayImageNotRead,
+            DisplayHtmlFormRenderError
         }
         // ReSharper restore InconsistentNaming
 
